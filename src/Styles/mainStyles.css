@@ -72,3 +72,27 @@ footer {
     background-color: #550055;
     border-radius: 20px;
 }
+
+input[type="checkbox"] {
+    color: white;
+    display: none;
+  }
+  
+  label {
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+  }
+  
+  label::before {
+    color: white;
+    content: "\2630";
+  }
+
+  #menu {
+    display: none;
+  }
+  
+  #menu.show {
+    display: block;
+  }

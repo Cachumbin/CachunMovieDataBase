@@ -2,6 +2,8 @@ const container = document.getElementById("container")
 const anterior = document.getElementById("anterior")
 const siguiente = document.getElementById("siguiente")
 const paginaTexto = document.getElementById('pagina')
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
 
 let pagina = 1;
 
@@ -19,6 +21,16 @@ anterior.addEventListener('click', ()=>{
         cargarPeliculas();
     }
 })
+
+
+
+menuToggle.addEventListener('change', function() {
+  if (this.checked) {
+    menu.classList.add('show');
+  } else {
+    menu.classList.remove('show');
+  }
+});
 
 const cargarPeliculas = async() => {
 
