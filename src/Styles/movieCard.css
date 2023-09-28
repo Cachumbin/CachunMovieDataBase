@@ -21,4 +21,10 @@
     background-color: #770077;
     border-radius: 20px;
     border: 3px solid #770077;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movieBox:hover {
+    transform: scale(1.2);
+
 }

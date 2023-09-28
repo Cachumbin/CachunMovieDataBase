@@ -76,23 +76,32 @@ footer {
 input[type="checkbox"] {
     color: white;
     display: none;
-  }
+}
   
-  label {
+label {
     cursor: pointer;
     font-size: 24px;
     line-height: 1;
-  }
+}
   
-  label::before {
+label::before {
     color: white;
     content: "\2630";
-  }
+}
 
-  #menu {
+#menu {
     display: none;
-  }
+}
   
-  #menu.show {
+#menu.show {
     display: block;
-  }
+}
+
+#menuLabel {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#menuLabel:hover {
+    background-color: #BB00BB;
+}
