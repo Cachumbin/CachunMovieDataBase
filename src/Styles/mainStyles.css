@@ -1,5 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 2rem;
+    background-color: #770077;
+}
+
 #container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
+    padding: 70px;
+}
+
+#search {
+    background-color: #550055;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    padding: 10px;
+    border: 0;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+#search::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #990099;
+}
+
+#menu {
+    margin: 15px;
+}
+
+footer {
+    padding: 2rem;
+    background-color: #770077;
+    display: flex;
+    justify-content: center;
+}
+
+.botonPag {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #550055;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+
+.botonPag:hover {
+    background-color: #990099;
+}
+
+.botonPag:active {
+    background-color: #BB00BB;
+}
+
+#pagina {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 1rem;
+    background-color: #550055;
+    border-radius: 20px;
 }

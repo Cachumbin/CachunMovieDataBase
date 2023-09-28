@@ -1,8 +1,29 @@
 const container = document.getElementById("container")
+const anterior = document.getElementById("anterior")
+const siguiente = document.getElementById("siguiente")
+const paginaTexto = document.getElementById('pagina')
+
+let pagina = 1;
+
+siguiente.addEventListener('click', ()=>{
+    if (pagina < 1001) {
+        pagina++
+        cargarPeliculas();
+    }
+    
+})
+
+anterior.addEventListener('click', ()=>{
+    if (pagina > 1) {
+        pagina--
+        cargarPeliculas();
+    }
+})
+
 const cargarPeliculas = async() => {
 
     try {
-        const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=9d85cf1cbc7c82147b1bfbefb5f55e8c`)
+        const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=9d85cf1cbc7c82147b1bfbefb5f55e8c&page=${pagina}`)
 
             console.log(response)
             
@@ -17,6 +38,7 @@ const cargarPeliculas = async() => {
                 })
 
                 container.innerHTML = peliculas
+                paginaTexto.innerHTML = pagina
 
             }
     } catch(error) {
