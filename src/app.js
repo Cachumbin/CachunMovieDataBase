@@ -13,7 +13,7 @@ const cargarPeliculas = async() => {
                 let peliculas = ""
 
                 data.results.forEach(pelicula => {
-                    peliculas = peliculas + `<div class="movieBox"><img class="movieImg" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"><h1 class="movieTilte">${pelicula.title}</h1></div>`
+                    peliculas = peliculas + `<div class="movieBox"><img class="movieImg" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"><h1 class="movieTitle">${pelicula.title}</h1></div>`
                 })
 
                 container.innerHTML = peliculas
