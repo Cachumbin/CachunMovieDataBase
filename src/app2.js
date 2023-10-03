@@ -1,9 +1,11 @@
-const container = document.getElementById("container")
-const anterior = document.getElementById("anterior")
-const siguiente = document.getElementById("siguiente")
-const paginaTexto = document.getElementById('pagina')
+const container = document.getElementById("container");
+const anterior = document.getElementById("anterior");
+const siguiente = document.getElementById("siguiente");
+const paginaTexto = document.getElementById('pagina');
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
+const submit = document.getElementById('submit');
+const search = document.getElementById('search');
 
 let pagina = 1;
 
@@ -59,5 +61,20 @@ const cargarPeliculas = async() => {
 
     
 }
+
+submit.addEventListener('click', async ()=>{
+    console.log("sirve")
+    try {
+        for (i=0; i<1000; i++) {
+            const response = await fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=9d85cf1cbc7c82147b1bfbefb5f55e8c&page=${pagina}`)
+            const data = await response.json()
+            console.log(data)
+        }
+
+    }
+    catch(error) {
+        console.log(error)
+    }
+})
 
 cargarPeliculas()

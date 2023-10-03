@@ -34,9 +34,6 @@ header {
     color: #990099;
 }
 
-#menu {
-    margin: 15px;
-}
 
 footer {
     padding: 2rem;
@@ -104,4 +101,37 @@ label::before {
 
 #menuLabel:hover {
     background-color: #BB00BB;
+}
+
+a {
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: #550055;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 20px;
+
+}
+
+a:hover {
+    background-color: #990099;
+}
+
+a:active {
+    background-color: #BB00BB;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    padding: 50px 30px;
+    background-color: #660066;
+    margin: 0;
+
 }
