@@ -135,3 +135,24 @@ ul {
     margin: 0;
 
 }
+
+#submit {
+    background-color:#550055 ;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: #990099;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+#submit:hover {
+    background-color: #770077;
+    color: #BB00BB;
+}
+
+#submit:active {
+    background-color: #990099;
+    color: #EE00EE;
+}
+
